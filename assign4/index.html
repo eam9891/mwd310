@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <h2>Ethan Morris <br> MWD310 - Assignment 4</h2><br>
+    <div id="wrapper">
     <form name="showMe" action="Client.php" method="get" target="display">
         <input type="radio" name="request" value="Part1">&nbsp; Part1<br>
         <input type="radio" name="request" value="Part2">&nbsp; Part2<br>
         <input type="radio" name="request" value="Part3">&nbsp; Part3<br>
-        <input type="radio" name="request" value="Part4">&nbsp; Part4<br>
+        <input type="radio" name="request" value="Part4">&nbsp; Part 4 $_GET<br>
         <input type="submit" value="Send" class="button"> <br>
     </form>
+
+
+    <form name="showMe" action="Client.php" method="post" target="display">
+        <input type="radio" name="request" value="Part4">&nbsp; Part 4 $_POST<br>
+        <input type="submit" value="Send" class="button">
+    </form>
+
+
+    </div>
     <iframe name="display" align="center">Stuff</iframe>
+
 </body>
 </html>

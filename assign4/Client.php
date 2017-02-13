@@ -26,7 +26,12 @@ Class Client
     public function __construct()
     {
 
-        $this->useClass = $_GET['request'];
+        if (!empty($_GET['request'])) {
+            $this->useClass = $_GET['request'];
+        }
+        if (!empty($_POST['request'])) {
+            $this->useClass = $_POST['request'];
+        }
         $this->callClass=new $this->useClass();
         echo $this->callClass->returnRequest();
 

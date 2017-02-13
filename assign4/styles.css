@@ -2,6 +2,10 @@ body {
     background-color: #4a5b8e;
 
 }
+#wrapper {
+    width: 200px;
+    margin: auto;
+}
 
 h2 {
     text-align: center;
@@ -9,22 +13,21 @@ h2 {
 }
 
 form {
-    text-align: center;
+
     margin-bottom: 10px;
 }
 input {
     padding: 10px;
+
 }
 
-iframe {
-    margin: auto;
-    display: block;
-}
 .button {
     padding: 10px;
 
 }
 iframe {
+    margin: auto;
+    display: block;
     border: 0;
     width: 80%;
     height: 80%;

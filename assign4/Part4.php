@@ -9,7 +9,23 @@
  *
  */
 class Part4 {
+    private $get;
+    private $post;
+    private $helper;
     public function returnRequest() {
+
+
+        if (!empty($_GET['request'])) {
+            $this->get = $_GET['request'];
+            echo $this->get.'$_GET request';
+        }
+        if (!empty($_POST['request'])) {
+            $this->post = $_POST['request'];
+            echo $this->post.'$_POST request';
+        }
+
+        $this->helper = new Part4Helper();
+
 
     }
 }
