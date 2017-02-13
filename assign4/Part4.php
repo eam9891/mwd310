@@ -17,12 +17,12 @@ class Part4 {
 
         if (!empty($_GET['request'])) {
             $this->get = $_GET['request'];
-            echo $this->get.'$_GET request';
+            echo $this->get.' $_GET request';
             echo '<br>';
         }
         if (!empty($_POST['request'])) {
             $this->post = $_POST['request'];
-            echo $this->post.'$_POST request';
+            echo $this->post.' $_POST request';
             echo '<br>';
         }
         $GLOBALS['a'] = "Part4 GLOBAL";
