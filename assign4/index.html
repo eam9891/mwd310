@@ -7,26 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h2>Ethan Morris <br> MWD310 - Assignment 4</h2><br>
+    <h1>Ethan Morris <br> MWD310 - Assignment 4</h1><br>
     <div id="wrapper">
-    <form name="showMe" action="Client.php" method="get" target="display">
-        <input type="radio" name="request" value="Part1">&nbsp; Part1<br>
-        <input type="radio" name="request" value="Part2">&nbsp; Part2<br>
-        <input type="radio" name="request" value="Part3">&nbsp; Part3<br>
-        <input type="radio" name="request" value="Part4">&nbsp; Part 4 $_GET<br>
-        <input type="submit" value="Send" class="button"> <br>
-    </form>
-
-
-    <form name="showMe" action="Client.php" method="post" target="display">
-        <input type="radio" name="request" value="Part4">&nbsp; Part 4 $_POST<br>
-        <input type="submit" value="Send" class="button">
-    </form>
-
-
+        <form class="get" name="showMe" action="Client.php" method="get" target="display">
+            <h3>Sent with the Get method!</h3>
+            <button type="submit" name="request" value="Part1">Part1</button>
+            <button type="submit" name="request" value="Part2">Part2</button>
+            <button type="submit" name="request" value="Part3">Part3</button>
+            <button type="submit" name="request" value="Part4">Part4</button>
+        </form>
+        <form class="post" name="showMe" action="Client.php" method="post" target="display">
+            <h3>Sent with the Post method!</h3>
+            <button type="submit" name="request" value="Part4">Part4</button>
+        </form>
     </div>
     <iframe name="display" align="center">Stuff</iframe>
-
 </body>
 </html>

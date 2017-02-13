@@ -8,6 +8,9 @@
  */
 class Part4Helper {
     function __construct() {
-        //echo $GLOBALS['request'];
+
+        echo 'Part4 $_SERVER '.$_SERVER['SERVER_NAME'];
+        echo '<br>';
+        echo $GLOBALS['a'];
     }
 }
